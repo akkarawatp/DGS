@@ -31,7 +31,7 @@
                             <label class="text-uppercase">Password</label>
                             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" class="form-control input-lg" placeholder="Password" required></asp:TextBox>
                         </div>
-                        <asp:button ID="btnLogin" runat="server"  class="btn btn-success btn-block btn-lg " Text="Sign In"/>
+                        <asp:button ID="btnLogin" runat="server"  class="btn btn-success btn-block btn-lg " Text="Sign In" OnClick="btnLogin_Click" />
                         </div>
                     </div>
                 </div>

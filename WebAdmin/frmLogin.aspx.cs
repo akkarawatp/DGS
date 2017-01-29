@@ -13,5 +13,10 @@ namespace WebAdmin
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e) {
+            Session["UserName"] = "admin";
+            Response.Redirect("frmSettingContent.aspx");
+        }
     }
 }
