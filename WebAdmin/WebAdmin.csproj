@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDB225B4-CAC2-476C-8A38-F53EF92DD499}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAdmin</RootNamespace>
+    <AssemblyName>WebAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="frmLogin.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="styles\animate.css" />
+    <Content Include="styles\app.css" />
+    <Content Include="styles\app.skins.css" />
+    <Content Include="styles\card.css" />
+    <Content Include="styles\climacons-font.css" />
+    <Content Include="styles\font-awesome.css" />
+    <Content Include="styles\jquery.dataTables.min.css" />
+    <Content Include="styles\Site.css" />
+    <Content Include="styles\sli.css" />
+    <Content Include="styles\webfont.css" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="styles\.DS_Store" />
+    <Content Include="styles\less\.DS_Store" />
+    <Content Include="styles\less\app.less" />
+    <Content Include="styles\less\app.skins.less" />
+    <Content Include="styles\less\app.variables.less" />
+    <Content Include="styles\less\bs.less" />
+    <Content Include="styles\less\bs\.DS_Store" />
+    <Content Include="styles\less\bs\alerts.less" />
+    <Content Include="styles\less\bs\bootstrap-ui.less" />
+    <Content Include="styles\less\bs\breadcrumb.less" />
+    <Content Include="styles\less\bs\buttons.less" />
+    <Content Include="styles\less\bs\code.less" />
+    <Content Include="styles\less\bs\dropdown.less" />
+    <Content Include="styles\less\bs\forms.less" />
+    <Content Include="styles\less\bs\input-groups.less" />
+    <Content Include="styles\less\bs\labels.less" />
+    <Content Include="styles\less\bs\list-group.less" />
+    <Content Include="styles\less\bs\modal.less" />
+    <Content Include="styles\less\bs\navbar.less" />
+    <Content Include="styles\less\bs\navs.less" />
+    <Content Include="styles\less\bs\pagination.less" />
+    <Content Include="styles\less\bs\panel.less" />
+    <Content Include="styles\less\bs\popover.less" />
+    <Content Include="styles\less\bs\progress.less" />
+    <Content Include="styles\less\bs\table.less" />
+    <Content Include="styles\less\bs\tooltip.less" />
+    <Content Include="styles\less\bs\type.less" />
+    <Content Include="styles\less\bs\well.less" />
+    <Content Include="styles\less\core.less" />
+    <Content Include="styles\less\core\.DS_Store" />
+    <Content Include="styles\less\core\accordion.less" />
+    <Content Include="styles\less\core\animations.less" />
+    <Content Include="styles\less\core\avatar.less" />
+    <Content Include="styles\less\core\brand.less" />
+    <Content Include="styles\less\core\chat-panel.less" />
+    <Content Include="styles\less\core\font.less" />
+    <Content Include="styles\less\core\footer.less" />
+    <Content Include="styles\less\core\hamburger-icon.less" />
+    <Content Include="styles\less\core\header.less" />
+    <Content Include="styles\less\core\layout-options.less" />
+    <Content Include="styles\less\core\main-panel.less" />
+    <Content Include="styles\less\core\offscreen.less" />
+    <Content Include="styles\less\core\preloader.less" />
+    <Content Include="styles\less\core\print.less" />
+    <Content Include="styles\less\core\quick-launch-panel.less" />
+    <Content Include="styles\less\core\scaffolding.less" />
+    <Content Include="styles\less\core\sidebar-panel.less" />
+    <Content Include="styles\less\core\switch.less" />
+    <Content Include="styles\less\core\typography.less" />
+    <Content Include="styles\less\core\widgets.less" />
+    <Content Include="styles\less\demo.less" />
+    <Content Include="styles\less\mixins.less" />
+    <Content Include="styles\less\mixins\.DS_Store" />
+    <Content Include="styles\less\mixins\misc.less" />
+    <Content Include="styles\less\mixins\skin-generator.less" />
+    <Content Include="styles\less\pages.less" />
+    <Content Include="styles\less\pages\.DS_Store" />
+    <Content Include="styles\less\pages\calendar.less" />
+    <Content Include="styles\less\pages\charts.less" />
+    <Content Include="styles\less\pages\error-pages.less" />
+    <Content Include="styles\less\pages\gallery.less" />
+    <Content Include="styles\less\pages\invoice.less" />
+    <Content Include="styles\less\pages\lockscreen.less" />
+    <Content Include="styles\less\pages\logins.less" />
+    <Content Include="styles\less\pages\messages.less" />
+    <Content Include="styles\less\pages\products.less" />
+    <Content Include="styles\less\pages\profile.less" />
+    <Content Include="styles\less\pages\timeline.less" />
+    <Content Include="styles\less\pages\travel.less" />
+    <Content Include="styles\less\plugins.less" />
+    <Content Include="styles\less\plugins\.DS_Store" />
+    <Content Include="styles\less\plugins\bootstrap-tags.less" />
+    <Content Include="styles\less\plugins\bootstrap-timepicker.less" />
+    <Content Include="styles\less\plugins\bootstrap-wizard.less" />
+    <Content Include="styles\less\plugins\bootstrap-wysiwyg.less" />
+    <Content Include="styles\less\plugins\c3.less" />
+    <Content Include="styles\less\plugins\chartjs.less" />
+    <Content Include="styles\less\plugins\checkbo.less" />
+    <Content Include="styles\less\plugins\chocolat.less" />
+    <Content Include="styles\less\plugins\chosen.less" />
+    <Content Include="styles\less\plugins\clockpicker.less" />
+    <Content Include="styles\less\plugins\color-picker.less" />
+    <Content Include="styles\less\plugins\datatables.less" />
+    <Content Include="styles\less\plugins\datepicker.less" />
+    <Content Include="styles\less\plugins\daterangepicker.less" />
+    <Content Include="styles\less\plugins\dropzone.less" />
+    <Content Include="styles\less\plugins\easypiechart.less" />
+    <Content Include="styles\less\plugins\flot.less" />
+    <Content Include="styles\less\plugins\googlemap.less" />
+    <Content Include="styles\less\plugins\input-select.less" />
+    <Content Include="styles\less\plugins\int-tel-input.less" />
+    <Content Include="styles\less\plugins\ioslist.less" />
+    <Content Include="styles\less\plugins\jquery-ui.less" />
+    <Content Include="styles\less\plugins\jquery-validation.less" />
+    <Content Include="styles\less\plugins\jvectormap.less" />
+    <Content Include="styles\less\plugins\labelauty.less" />
+    <Content Include="styles\less\plugins\multiselect.less" />
+    <Content Include="styles\less\plugins\nestable.less" />
+    <Content Include="styles\less\plugins\noty.less" />
+    <Content Include="styles\less\plugins\nvd3.less" />
+    <Content Include="styles\less\plugins\perfectscrollbar.less" />
+    <Content Include="styles\less\plugins\portlets.less" />
+    <Content Include="styles\less\plugins\rickshaw.less" />
+    <Content Include="styles\less\plugins\selects.less" />
+    <Content Include="styles\less\plugins\social-buttons.less" />
+    <Content Include="styles\less\plugins\sortable.less" />
+    <Content Include="styles\less\plugins\spinkit.less" />
+    <Content Include="styles\less\plugins\summernote.less" />
+    <Content Include="styles\less\plugins\sweetalert.less" />
+    <Content Include="styles\less\plugins\textAngular.less" />
+    <Content Include="styles\less\plugins\touchspin.less" />
+    <Content Include="styles\less\plugins\typeahead.less" />
+    <Content Include="styles\less\utilities.less" />
+    <Content Include="styles\less\variables.less" />
+    <Content Include="styles\scss\.DS_Store" />
+    <Content Include="styles\scss\app.scss" />
+    <Content Include="styles\scss\app.skins.scss" />
+    <Content Include="styles\scss\bs\.DS_Store" />
+    <Content Include="styles\scss\bs\_alerts.scss" />
+    <Content Include="styles\scss\bs\_bootstrap-ui.scss" />
+    <Content Include="styles\scss\bs\_breadcrumb.scss" />
+    <Content Include="styles\scss\bs\_buttons.scss" />
+    <Content Include="styles\scss\bs\_code.scss" />
+    <Content Include="styles\scss\bs\_dropdown.scss" />
+    <Content Include="styles\scss\bs\_forms.scss" />
+    <Content Include="styles\scss\bs\_input-groups.scss" />
+    <Content Include="styles\scss\bs\_labels.scss" />
+    <Content Include="styles\scss\bs\_list-group.scss" />
+    <Content Include="styles\scss\bs\_modal.scss" />
+    <Content Include="styles\scss\bs\_navbar.scss" />
+    <Content Include="styles\scss\bs\_navs.scss" />
+    <Content Include="styles\scss\bs\_pagination.scss" />
+    <Content Include="styles\scss\bs\_panel.scss" />
+    <Content Include="styles\scss\bs\_popover.scss" />
+    <Content Include="styles\scss\bs\_progress.scss" />
+    <Content Include="styles\scss\bs\_table.scss" />
+    <Content Include="styles\scss\bs\_tooltip.scss" />
+    <Content Include="styles\scss\bs\_type.scss" />
+    <Content Include="styles\scss\bs\_well.scss" />
+    <Content Include="styles\scss\core\.DS_Store" />
+    <Content Include="styles\scss\core\_accordion.scss" />
+    <Content Include="styles\scss\core\_animations.scss" />
+    <Content Include="styles\scss\core\_avatar.scss" />
+    <Content Include="styles\scss\core\_brand.scss" />
+    <Content Include="styles\scss\core\_chat-panel.scss" />
+    <Content Include="styles\scss\core\_font.scss" />
+    <Content Include="styles\scss\core\_footer.scss" />
+    <Content Include="styles\scss\core\_hamburger-icon.scss" />
+    <Content Include="styles\scss\core\_header.scss" />
+    <Content Include="styles\scss\core\_layout-options.scss" />
+    <Content Include="styles\scss\core\_main-panel.scss" />
+    <Content Include="styles\scss\core\_offscreen.scss" />
+    <Content Include="styles\scss\core\_preloader.scss" />
+    <Content Include="styles\scss\core\_print.scss" />
+    <Content Include="styles\scss\core\_quick-launch-panel.scss" />
+    <Content Include="styles\scss\core\_scaffolding.scss" />
+    <Content Include="styles\scss\core\_sidebar-panel.scss" />
+    <Content Include="styles\scss\core\_switch.scss" />
+    <Content Include="styles\scss\core\_typography.scss" />
+    <Content Include="styles\scss\core\_widgets.scss" />
+    <Content Include="styles\scss\mixins\.DS_Store" />
+    <Content Include="styles\scss\mixins\_misc.scss" />
+    <Content Include="styles\scss\mixins\_skin-generator.scss" />
+    <Content Include="styles\scss\pages\.DS_Store" />
+    <Content Include="styles\scss\pages\_calendar.scss" />
+    <Content Include="styles\scss\pages\_charts.scss" />
+    <Content Include="styles\scss\pages\_error-pages.scss" />
+    <Content Include="styles\scss\pages\_gallery.scss" />
+    <Content Include="styles\scss\pages\_invoice.scss" />
+    <Content Include="styles\scss\pages\_lockscreen.scss" />
+    <Content Include="styles\scss\pages\_logins.scss" />
+    <Content Include="styles\scss\pages\_messages.scss" />
+    <Content Include="styles\scss\pages\_products.scss" />
+    <Content Include="styles\scss\pages\_profile.scss" />
+    <Content Include="styles\scss\pages\_timeline.scss" />
+    <Content Include="styles\scss\pages\_travel.scss" />
+    <Content Include="styles\scss\plugins\.DS_Store" />
+    <Content Include="styles\scss\plugins\textAngular.scss" />
+    <Content Include="styles\scss\plugins\_bootstrap-tags.scss" />
+    <Content Include="styles\scss\plugins\_bootstrap-timepicker.scss" />
+    <Content Include="styles\scss\plugins\_bootstrap-wizard.scss" />
+    <Content Include="styles\scss\plugins\_bootstrap-wysiwyg.scss" />
+    <Content Include="styles\scss\plugins\_c3.scss" />
+    <Content Include="styles\scss\plugins\_chartjs.scss" />
+    <Content Include="styles\scss\plugins\_checkbo.scss" />
+    <Content Include="styles\scss\plugins\_chocolat.scss" />
+    <Content Include="styles\scss\plugins\_chosen.scss" />
+    <Content Include="styles\scss\plugins\_clockpicker.scss" />
+    <Content Include="styles\scss\plugins\_color-picker.scss" />
+    <Content Include="styles\scss\plugins\_datatables.scss" />
+    <Content Include="styles\scss\plugins\_datepicker.scss" />
+    <Content Include="styles\scss\plugins\_daterangepicker.scss" />
+    <Content Include="styles\scss\plugins\_dropzone.scss" />
+    <Content Include="styles\scss\plugins\_easypiechart.scss" />
+    <Content Include="styles\scss\plugins\_flot.scss" />
+    <Content Include="styles\scss\plugins\_googlemap.scss" />
+    <Content Include="styles\scss\plugins\_input-select.scss" />
+    <Content Include="styles\scss\plugins\_int-tel-input.scss" />
+    <Content Include="styles\scss\plugins\_ioslist.scss" />
+    <Content Include="styles\scss\plugins\_jquery-ui.scss" />
+    <Content Include="styles\scss\plugins\_jquery-validation.scss" />
+    <Content Include="styles\scss\plugins\_jvectormap.scss" />
+    <Content Include="styles\scss\plugins\_labelauty.scss" />
+    <Content Include="styles\scss\plugins\_multiselect.scss" />
+    <Content Include="styles\scss\plugins\_nestable.scss" />
+    <Content Include="styles\scss\plugins\_noty.scss" />
+    <Content Include="styles\scss\plugins\_nvd3.scss" />
+    <Content Include="styles\scss\plugins\_perfectscrollbar.scss" />
+    <Content Include="styles\scss\plugins\_portlets.scss" />
+    <Content Include="styles\scss\plugins\_rickshaw.scss" />
+    <Content Include="styles\scss\plugins\_selects.scss" />
+    <Content Include="styles\scss\plugins\_social-buttons.scss" />
+    <Content Include="styles\scss\plugins\_sortable.scss" />
+    <Content Include="styles\scss\plugins\_spinkit.scss" />
+    <Content Include="styles\scss\plugins\_summernote.scss" />
+    <Content Include="styles\scss\plugins\_sweetalert.scss" />
+    <Content Include="styles\scss\plugins\_touchspin.scss" />
+    <Content Include="styles\scss\plugins\_typeahead.scss" />
+    <Content Include="styles\scss\_app.variables.scss" />
+    <Content Include="styles\scss\_bs.scss" />
+    <Content Include="styles\scss\_core.scss" />
+    <Content Include="styles\scss\_demo.scss" />
+    <Content Include="styles\scss\_mixins.scss" />
+    <Content Include="styles\scss\_pages.scss" />
+    <Content Include="styles\scss\_plugins.scss" />
+    <Content Include="styles\scss\_utilities.scss" />
+    <Content Include="styles\scss\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36692</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36692/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
