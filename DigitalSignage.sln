@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAdmin", "WebAdmin\WebAdmin.csproj", "{CDB225B4-CAC2-476C-8A38-F53EF92DD499}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertImage", "ConvertImage\ConvertImage.csproj", "{D02ACA91-0710-4787-83C0-0C6CC785072E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameGrabber", "FrameGrabber\FrameGrabber.csproj", "{50860E5D-4488-4FD1-BB0C-C68D39A2541A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{CDB225B4-CAC2-476C-8A38-F53EF92DD499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDB225B4-CAC2-476C-8A38-F53EF92DD499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDB225B4-CAC2-476C-8A38-F53EF92DD499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02ACA91-0710-4787-83C0-0C6CC785072E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02ACA91-0710-4787-83C0-0C6CC785072E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02ACA91-0710-4787-83C0-0C6CC785072E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02ACA91-0710-4787-83C0-0C6CC785072E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50860E5D-4488-4FD1-BB0C-C68D39A2541A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50860E5D-4488-4FD1-BB0C-C68D39A2541A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50860E5D-4488-4FD1-BB0C-C68D39A2541A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50860E5D-4488-4FD1-BB0C-C68D39A2541A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

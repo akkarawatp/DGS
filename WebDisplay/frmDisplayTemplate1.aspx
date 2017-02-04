@@ -23,9 +23,11 @@
             <table cellpadding="0" cellspacing="0" style="height:100%;width:100%;" >     
                 <tr>
                     <td style="width:50%">
+                        123
                         <asp:Literal ID="litContent1" runat="server"></asp:Literal>
                     </td>
                     <td style="width:50%">
+                        456
                         <asp:Literal ID="litContent2" runat="server"></asp:Literal>
                     </td>
 

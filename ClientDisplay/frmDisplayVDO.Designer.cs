@@ -42,6 +42,7 @@
             this.VDO.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("VDO.OcxState")));
             this.VDO.Size = new System.Drawing.Size(831, 473);
             this.VDO.TabIndex = 0;
+            this.VDO.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.VDO_PlayStateChange);
             // 
             // frmDisplayVDO
             // 

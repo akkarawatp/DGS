@@ -38,5 +38,31 @@ namespace ClientDisplay
 
             VDO.Ctlcontrols.play();
         }
+
+        private void VDO_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        {
+        //    If e.newState.ToString = "8" Then
+        //    'เมื่อไฟล์ VDO เล่นจบ
+        //End If
+
+
+        //''########## Video State Reference
+        //'0 = Undefined
+        //'1 = Stopped (by User)
+        //'2 = Paused
+        //'3 = Playing
+        //'4 = Scan Forward
+        //'5 = Scan Backwards
+        //'6 = Buffering
+        //'7 = Waiting
+        //'8 = Media Ended
+        //'9 = Transitioning
+        //'10 = Ready
+        //'11 = Reconnecting
+        //'12 = Last
+            //VDO.Ctlcontrols.currentPosition
+            
+            //VDO.Ctlcontrols.
+        }
     }
 }

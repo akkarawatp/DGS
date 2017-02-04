@@ -85,16 +85,6 @@
     <Content Include="frmDisplayTemplate1.aspx" />
     <Content Include="frmSample.aspx" />
     <Content Include="frmSampleJQueryPlayer.aspx" />
-    <Content Include="HTML5Player\css\jquerysctipttop.css" />
-    <Content Include="HTML5Player\expand.svg" />
-    <Content Include="HTML5Player\index.html" />
-    <Content Include="HTML5Player\js\jquery-3.1.1.slim.min.js" />
-    <Content Include="HTML5Player\mute.svg" />
-    <Content Include="HTML5Player\pause.svg" />
-    <Content Include="HTML5Player\play-button.svg" />
-    <Content Include="HTML5Player\play.svg" />
-    <Content Include="HTML5Player\replay.svg" />
-    <Content Include="HTML5Player\volume.svg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -124,7 +114,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -166,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="JQueryPlayer\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.csproj">

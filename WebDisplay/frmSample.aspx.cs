@@ -21,7 +21,7 @@ namespace WebDisplay
                 //string value = @"D:\Tmp\VDO\VDO.avi";
 
                 //string fileUrl = @"http://192.168.203.139/TestVDO/Manual-BI.pdf";
-                //string fileUrl = @"http://192.168.203.139/TestVDO/VDO.avi";
+                //string fileUrl = @"http://192.168.203.139/TestVDO/6.mp4";
                 //BuiltPDFObject(fileUrl);
 
                 DisplayContent();
