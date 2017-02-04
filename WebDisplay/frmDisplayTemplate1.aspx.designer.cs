@@ -10,7 +10,7 @@
 namespace WebDisplay {
     
     
-    public partial class frmMain {
+    public partial class frmDisplayTemplate1 {
         
         /// <summary>
         /// form1 control.
@@ -31,21 +31,21 @@ namespace WebDisplay {
         protected global::System.Web.UI.ScriptManager scripmanager1;
         
         /// <summary>
-        /// lit1 control.
+        /// litContent1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal lit1;
+        protected global::System.Web.UI.WebControls.Literal litContent1;
         
         /// <summary>
-        /// TimerChangeContent control.
+        /// litContent2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.Timer TimerChangeContent;
+        protected global::System.Web.UI.WebControls.Literal litContent2;
     }
 }

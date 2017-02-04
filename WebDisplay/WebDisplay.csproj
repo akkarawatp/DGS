@@ -82,7 +82,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="frmMain.aspx" />
+    <Content Include="frmDisplayTemplate1.aspx" />
+    <Content Include="frmSample.aspx" />
+    <Content Include="frmSampleJQueryPlayer.aspx" />
+    <Content Include="HTML5Player\css\jquerysctipttop.css" />
+    <Content Include="HTML5Player\expand.svg" />
+    <Content Include="HTML5Player\index.html" />
+    <Content Include="HTML5Player\js\jquery-3.1.1.slim.min.js" />
+    <Content Include="HTML5Player\mute.svg" />
+    <Content Include="HTML5Player\pause.svg" />
+    <Content Include="HTML5Player\play-button.svg" />
+    <Content Include="HTML5Player\play.svg" />
+    <Content Include="HTML5Player\replay.svg" />
+    <Content Include="HTML5Player\volume.svg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -129,12 +141,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.aspx.cs">
-      <DependentUpon>frmMain.aspx</DependentUpon>
+    <Compile Include="frmDisplayTemplate1.aspx.cs">
+      <DependentUpon>frmDisplayTemplate1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="frmMain.aspx.designer.cs">
-      <DependentUpon>frmMain.aspx</DependentUpon>
+    <Compile Include="frmDisplayTemplate1.aspx.designer.cs">
+      <DependentUpon>frmDisplayTemplate1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSample.aspx.cs">
+      <DependentUpon>frmSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSample.aspx.designer.cs">
+      <DependentUpon>frmSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSampleJQueryPlayer.aspx.cs">
+      <DependentUpon>frmSampleJQueryPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSampleJQueryPlayer.aspx.designer.cs">
+      <DependentUpon>frmSampleJQueryPlayer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

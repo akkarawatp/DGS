@@ -10,7 +10,7 @@ using Engine;
 
 namespace WebDisplay
 {
-    public partial class frmMain : System.Web.UI.Page
+    public partial class frmSample : System.Web.UI.Page
     {
         
         protected void Page_Load(object sender, EventArgs e)
@@ -20,7 +20,8 @@ namespace WebDisplay
                 //string fileUrl = @"https://tescolotuslc.com/learningcenterstaging/storage/document/2017/01/25/08/4611/20170125-083104.doc1mp4.mp4";
                 //string value = @"D:\Tmp\VDO\VDO.avi";
 
-                //string fileUrl = @"http://192.168.203.134/TestVDO/Manual-BI.pdf";
+                //string fileUrl = @"http://192.168.203.139/TestVDO/Manual-BI.pdf";
+                //string fileUrl = @"http://192.168.203.139/TestVDO/VDO.avi";
                 //BuiltPDFObject(fileUrl);
 
                 DisplayContent();
