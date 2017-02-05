@@ -49,23 +49,19 @@ namespace WebDisplay
             string FileUrl = dr["file_url"].ToString();
             if (FileUrl.ToLower().EndsWith(".pdf") == true)
             {
-                BuiltPDFObject(FileUrl);
+                EmbedObjectScriptENG.BuiltPDFObject(FileUrl,lit1);
             }
             else if ((FileUrl.ToLower().EndsWith(".mp4") == true) || (FileUrl.ToLower().EndsWith(".avi") == true) || (FileUrl.ToLower().EndsWith(".mpg") == true))
             {
 
-                BuiltVideoObject(FileUrl);
+                EmbedObjectScriptENG.BuiltVideoObject("1",FileUrl,lit1,"", litStartScript,Request);
             }
 
             TimerChangeContent.Enabled = true;
             TimerChangeContent.Interval = Convert.ToInt16(dr["duration_min"]) * 60000;
         }
 
-        private void BuiltPDFObject(string fileURL) {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("<embed src='" + fileURL + "' width='100%' height='680px' />");
-            lit1.Text = sb.ToString();
-        }
+        
 
         //private void BuiltVideoObject(string fileUrl) {
         //    StringBuilder sb = new StringBuilder();
@@ -85,24 +81,24 @@ namespace WebDisplay
         //    lit1.Text = sb.ToString();
         //}
 
-        private void BuiltVideoObject(string fileUrl)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("<object id='mediaPlayer' width='100%' height='680px'  classid='CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95'");
-            //sb.AppendLine("codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701'");
-            sb.AppendLine(" standby='Loading Microsoft Windows Media Player components...' type='application/x-shockwave-flash'>");
-            sb.AppendLine(" <param name='fileName' value=" + fileUrl + " />");
-            sb.AppendLine(" <param name='animationatStart' value='true'/>");
-            sb.AppendLine(" <param name='transparentatStart' value='true'/>");
-            sb.AppendLine(" <param name='autoStart' value='true'/>");
-            sb.AppendLine(" <param name='showControls' value='false'/>");
-            sb.AppendLine(" <param name='loop' value='true'/>");
-            sb.AppendLine(" <param name='AutoSize' value='false' />");
-            sb.AppendLine(" <param name='allowFullScreen' value='true' />");
-            sb.AppendLine("</object>");
+        //private void BuiltVideoObject(string fileUrl)
+        //{
+        //    StringBuilder sb = new StringBuilder();
+        //    sb.AppendLine("<object id='mediaPlayer' width='100%' height='680px'  classid='CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95'");
+        //    //sb.AppendLine("codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701'");
+        //    sb.AppendLine(" standby='Loading Microsoft Windows Media Player components...' type='application/x-shockwave-flash'>");
+        //    sb.AppendLine(" <param name='fileName' value=" + fileUrl + " />");
+        //    sb.AppendLine(" <param name='animationatStart' value='true'/>");
+        //    sb.AppendLine(" <param name='transparentatStart' value='true'/>");
+        //    sb.AppendLine(" <param name='autoStart' value='true'/>");
+        //    sb.AppendLine(" <param name='showControls' value='false'/>");
+        //    sb.AppendLine(" <param name='loop' value='true'/>");
+        //    sb.AppendLine(" <param name='AutoSize' value='false' />");
+        //    sb.AppendLine(" <param name='allowFullScreen' value='true' />");
+        //    sb.AppendLine("</object>");
 
-            lit1.Text = sb.ToString();
-        }
+        //    lit1.Text = sb.ToString();
+        //}
 
         //type='application/x-shockwave-flash
 

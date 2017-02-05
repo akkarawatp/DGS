@@ -10,8 +10,7 @@
 namespace WebDisplay {
     
     
-    public partial class frmSample
-    {
+    public partial class frmSample {
         
         /// <summary>
         /// form1 control.
@@ -39,6 +38,15 @@ namespace WebDisplay {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal lit1;
+        
+        /// <summary>
+        /// litStartScript control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litStartScript;
         
         /// <summary>
         /// TimerChangeContent control.

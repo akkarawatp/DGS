@@ -11,6 +11,7 @@
     <asp:ScriptManager ID="scripmanager1" runat="server"></asp:ScriptManager>
     <div >
        <asp:Literal ID="lit1" runat="server"></asp:Literal>
+        <asp:Literal ID="litStartScript" runat="server"></asp:Literal>
         <asp:Timer ID="TimerChangeContent" runat="server" OnTick="TimerChangeContent_Tick" Interval="10000">
         </asp:Timer>
     </div>

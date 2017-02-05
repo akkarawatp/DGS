@@ -31,11 +31,12 @@
                     <td style="width:50%">
                         <asp:Literal ID="litContent2" runat="server"></asp:Literal>
                     </td>
-                </tr>  
+                </tr>
             </table>
             <script src="VideoJS/video.js"></script>
         </div>
     </form>
-    
+    <asp:Literal ID="litStartScript1" runat="server"></asp:Literal>
+    <asp:Literal ID="litStartScript2" runat="server"></asp:Literal>
 </body>
 </html>

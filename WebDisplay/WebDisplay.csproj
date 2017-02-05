@@ -92,6 +92,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="frmDisplayJWPlayer.aspx" />
     <Content Include="frmDisplayTemplate1.aspx" />
+    <Content Include="frmDisplayTemplate2.aspx" />
     <Content Include="frmDisplayVDOTag.aspx" />
     <Content Include="frmDisplayVideoJS.aspx" />
     <Content Include="frmDisplayWithIFrame.aspx" />
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="frmDisplayTemplate1.aspx.designer.cs">
       <DependentUpon>frmDisplayTemplate1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayTemplate2.aspx.cs">
+      <DependentUpon>frmDisplayTemplate2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisplayTemplate2.aspx.designer.cs">
+      <DependentUpon>frmDisplayTemplate2.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmDisplayVDOTag.aspx.cs">
       <DependentUpon>frmDisplayVDOTag.aspx</DependentUpon>
