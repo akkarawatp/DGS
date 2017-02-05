@@ -43,6 +43,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.4.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -81,10 +88,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Properties\PublishProfiles\SignageWebDisplay.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="frmDisplayJWPlayer.aspx" />
     <Content Include="frmDisplayTemplate1.aspx" />
+    <Content Include="frmDisplayVDOTag.aspx" />
+    <Content Include="frmDisplayVideoJS.aspx" />
+    <Content Include="frmDisplayWithIFrame.aspx" />
+    <Content Include="frmDisplayYouTupe.aspx" />
     <Content Include="frmSample.aspx" />
     <Content Include="frmSampleJQueryPlayer.aspx" />
+    <Content Include="JWPlayer\jwplayer.js" />
+    <Content Include="JWPlayer\player.swf" />
+    <Content Include="JWPlayer\swfobject.js" />
+    <Content Include="JWPlayer\video.mp4" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -114,6 +131,10 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="VdoTemp.htm" />
+    <Content Include="VideoJS\video-js.css" />
+    <Content Include="VideoJS\video.js" />
+    <Content Include="VideoJS\videojs-ie8.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -133,12 +154,47 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmDisplayJWPlayer.aspx.cs">
+      <DependentUpon>frmDisplayJWPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisplayJWPlayer.aspx.designer.cs">
+      <DependentUpon>frmDisplayJWPlayer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmDisplayTemplate1.aspx.cs">
       <DependentUpon>frmDisplayTemplate1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="frmDisplayTemplate1.aspx.designer.cs">
       <DependentUpon>frmDisplayTemplate1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayVDOTag.aspx.cs">
+      <DependentUpon>frmDisplayVDOTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisplayVDOTag.aspx.designer.cs">
+      <DependentUpon>frmDisplayVDOTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayVideoJS.aspx.cs">
+      <DependentUpon>frmDisplayVideoJS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisplayVideoJS.aspx.designer.cs">
+      <DependentUpon>frmDisplayVideoJS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayWithIFrame.aspx.cs">
+      <DependentUpon>frmDisplayWithIFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisplayWithIFrame.aspx.designer.cs">
+      <DependentUpon>frmDisplayWithIFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayYouTupe.aspx.cs">
+      <DependentUpon>frmDisplayYouTupe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisplayYouTupe.aspx.designer.cs">
+      <DependentUpon>frmDisplayYouTupe.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmSample.aspx.cs">
       <DependentUpon>frmSample.aspx</DependentUpon>
@@ -158,7 +214,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="JQueryPlayer\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.csproj">

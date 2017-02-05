@@ -12,9 +12,12 @@
             vertical-align:top;
         }
         div{height:100%;width:100%;}
-        /*table{background:green; width:450px}*/
 
     </style>
+    <link href="VideoJS/video-js.css" rel="stylesheet">
+
+    <!-- If you'd like to support IE8 -->
+    <script src="VideoJS/videojs-ie8.min.js"></script>
 </head>
 <body >
     <form id="form1" runat="server" >
@@ -23,17 +26,14 @@
             <table cellpadding="0" cellspacing="0" style="height:100%;width:100%;" >     
                 <tr>
                     <td style="width:50%">
-                        123
                         <asp:Literal ID="litContent1" runat="server"></asp:Literal>
                     </td>
                     <td style="width:50%">
-                        456
                         <asp:Literal ID="litContent2" runat="server"></asp:Literal>
                     </td>
-
                 </tr>  
             </table>
-        
+            <script src="VideoJS/video.js"></script>
         </div>
     </form>
     

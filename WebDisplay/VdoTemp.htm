@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+   <link href="http://www.flashls.org/videojs/video-js.css " rel="stylesheet" type="text/css">
+  <!-- video.js must be in the <head> for older IEs to work. -->
+  <script src="http://www.flashls.org/videojs/video.js "></script>
+
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "http://www.flashls.org/videojs/video-js.swf ";
+  </script>
+</head>
+<body>
+  
+
+
+
+	<center>
+	  <video id="video_1" class="video-js vjs-default-skin" controls preload="none" width="560" height="420" 
+
+		  data-setup='{ "controls": true, "autoplay": true, "preload": "auto" }'>
+
+		<source src="http://103.253.72.88/AppSignage/SignageVDO/AIS.m4v" type='video/mp4' />
+	  </video>
+	</center>
+    <script>
+    //-----------------------------------------------------
+    //ใช้ได้เฉพาะ Chrome
+    //var player = videojs('video_1');
+    //player.ready(function() {
+    //    player.currentTime(50);
+    //    player.play();
+    //});
+        //-----------------------------------------------------
+
+
+    //--------------------------------------------------------
+    //IE ให้ใช้แบบนี้
+    var player = document.getElementById("video_1");
+    player.play();
+    player.addEventListener("canplay", function () { player.currentTime = 50; });
+    //---------------------------------------------------------
+    </script>
+
+</body>
+</html>
+
+
