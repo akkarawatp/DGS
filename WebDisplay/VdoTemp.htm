@@ -25,6 +25,8 @@
 		<source src="http://103.253.72.88/AppSignage/SignageVDO/AIS.m4v" type='video/mp4' />
 	  </video>
 	</center>
+
+    <div id="txtVideoCurrentTime" ></div>
     <script>
     //-----------------------------------------------------
     //ใช้ได้เฉพาะ Chrome
@@ -40,7 +42,16 @@
     //IE ให้ใช้แบบนี้
     var player = document.getElementById("video_1");
     player.play();
-    player.addEventListener("canplay", function () { player.currentTime = 50; });
+    //player.addEventListener("canplay", function () { player.currentTime = 50; });
+
+    player.ontimeupdate = function () { ShowCurrentTime()};
+    function ShowCurrentTime() {
+        document.getElementById("txtVideoCurrentTime").innerHTML = player.currentTime;
+
+        if (parseInt(player.currentTime) >= 10) {
+            player.currentTime = 5;
+        }
+    }
     //---------------------------------------------------------
     </script>
 
